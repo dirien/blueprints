@@ -19,4 +19,4 @@ template:
     nodeCount:
       default: 1
     version:
-      default: "1.31.1-do.5"
+      default: "1.32.2-do.0"
