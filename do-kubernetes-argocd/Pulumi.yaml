@@ -7,7 +7,7 @@ runtime:
 
 config:
   pulumi:tags:
-    items: 
+    value:
       pulumi:template: do-kubernetes-argocd
   esc:tag: digitalocean
 
