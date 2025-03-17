@@ -1,0 +1,23 @@
+name: do-kubernetes-argocd
+description: A minimal DigitalOcean TypeScript Pulumi program
+runtime:
+  name: nodejs
+  options:
+    packagemanager: npm
+
+config:
+  pulumi:tags:
+    value:
+      pulumi:template: digitalocean-typescript
+
+template:
+  description: A minimal DigitalOcean TypeScript Pulumi program
+  config:
+    digitalocean:token:
+      secret: true
+    region:
+      default: fra1
+    nodeCount:
+      default: 1
+    version:
+      default: "1.31.1-do.5"
