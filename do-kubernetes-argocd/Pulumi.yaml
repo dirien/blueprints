@@ -7,7 +7,8 @@ runtime:
 
 config:
   pulumi:tags:
-    pulumi:template: do-kubernetes-argocd
+    items: 
+      pulumi:template: do-kubernetes-argocd
   esc:tag: digitalocean
 
 template:
