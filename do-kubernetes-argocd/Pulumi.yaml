@@ -7,11 +7,8 @@ runtime:
 
 config:
   pulumi:tags:
-    value:
-      pulumi:template: do-kubernetes-argocd
-  esc:tags:
-    value:
-      esc: digitalocean
+    pulumi:template: do-kubernetes-argocd
+  esc:tag: digitalocean
 
 template:
   description: A minimal DigitalOcean TypeScript Pulumi program
