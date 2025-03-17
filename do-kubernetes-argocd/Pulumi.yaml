@@ -8,13 +8,14 @@ runtime:
 config:
   pulumi:tags:
     value:
-      pulumi:template: digitalocean-typescript
+      pulumi:template: do-kubernetes-argocd
+  esc:tags:
+    value:
+      esc: digitalocean
 
 template:
   description: A minimal DigitalOcean TypeScript Pulumi program
   config:
-    digitalocean:token:
-      secret: true
     region:
       default: fra1
     nodeCount:
