@@ -12,7 +12,7 @@ config:
     value:
       pulumi:template: do-kubernetes-argocd
       idp:displayName: Kubernetes Cluster on DigitalOcean
-      idp:logo: boxes
+      idp:blueprintIcon: boxes
   esc:tag: digitalocean
 
 template:
