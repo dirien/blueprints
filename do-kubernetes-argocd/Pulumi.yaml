@@ -11,11 +11,11 @@ config:
   pulumi:tags:
     value:
       pulumi:template: do-kubernetes-argocd
-      idp:displayName: Kubernetes Cluster on DigitalOcean
       idp:blueprintIcon: boxes
   esc:tag: digitalocean
 
 template:
+  displayName: Kubernetes Cluster on DigitalOcean
   description: |
     A Kubernetes cluster on DigitalOcean with ArgoCD for GitOps deployments installed
   config:
