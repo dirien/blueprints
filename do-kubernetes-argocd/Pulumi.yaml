@@ -1,5 +1,7 @@
 name: do-kubernetes-argocd
-description: A minimal DigitalOcean TypeScript Pulumi program
+author: ACME Platform engineering team
+description: |
+  A Kubernetes cluster on DigitalOcean with ArgoCD for GitOps deployments installed
 runtime:
   name: nodejs
   options:
@@ -9,10 +11,13 @@ config:
   pulumi:tags:
     value:
       pulumi:template: do-kubernetes-argocd
+      idp:displayName: Kubernetes Cluster on DigitalOcean
+      idp:logo: boxes
   esc:tag: digitalocean
 
 template:
-  description: A minimal DigitalOcean TypeScript Pulumi program
+  description: |
+    A Kubernetes cluster on DigitalOcean with ArgoCD for GitOps deployments installed
   config:
     region:
       default: fra1
