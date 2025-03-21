@@ -9,7 +9,7 @@ const ns = new k8s.core.v1.Namespace(config.require("name"), {})
 
 const deployment = new k8s.apps.v1.Deployment(config.require("name"), {
     metadata: {
-        namespace: ns.metadata.namespace,
+        namespace: ns.metadata.name,
     },
     spec: {
         selector: {
@@ -35,7 +35,7 @@ const deployment = new k8s.apps.v1.Deployment(config.require("name"), {
 const service = new k8s.core.v1.Service(config.require("name"), {
     metadata: {
         labels: deployment.spec.template.metadata.labels,
-        namespace: ns.metadata.namespace,
+        namespace: ns.metadata.name,
     },
     spec: {
         selector: appLabels,
