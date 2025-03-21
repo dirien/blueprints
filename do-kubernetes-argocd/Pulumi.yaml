@@ -12,6 +12,9 @@ config:
     value:
       pulumi:template: do-kubernetes-argocd
       idp:blueprintIcon: boxes
+      idp:blueprintType: kubernetes
+      idp:blueprintLifecycle: production
+      idp:blueprintVersion: 1.0.0
   esc:tag: digitalocean
 
 template:
