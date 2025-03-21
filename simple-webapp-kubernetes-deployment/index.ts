@@ -49,4 +49,5 @@ const service = new k8s.core.v1.Service(config.require("name"), {
     }
 });
 
-export const name = deployment.metadata.name;
+
+export const url = pulumi.interpolate`http://${service.status.loadBalancer.ingress[0].ip + ":" + service.spec.ports[0].port}`;
