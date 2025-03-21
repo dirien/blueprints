@@ -1,12 +1,13 @@
 {
-    "name": "do-kubernetes-argocd",
-    "main": "index.ts",
-    "devDependencies": {
-        "@types/node": "^18",
-        "typescript": "^5.0.0"
-    },
-    "dependencies": {
-        "@pulumi/digitalocean": "^4.0.0",
-        "@pulumi/pulumi": "^3.113.0"
-    }
+  "name": "do-kubernetes-argocd",
+  "main": "index.ts",
+  "devDependencies": {
+    "@types/node": "^18",
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@pulumi/digitalocean": "^4.0.0",
+    "@pulumi/pulumi": "^3.113.0",
+    "@pulumi/kubernetes": "^4.22.1"
+  }
 }
