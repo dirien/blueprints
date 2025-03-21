@@ -1,5 +1,5 @@
 name: do-kubernetes-argocd
-author: ACME Platform engineering team
+author: Platform engineering team
 description: |
   A Kubernetes cluster on DigitalOcean with ArgoCD for GitOps deployments installed
 runtime:
