@@ -2,10 +2,10 @@ name: simple-webapp-kubernetes-deployment
 author: Platform engineering team
 description: |
   A simple webapp deployment on Kubernetes using Pulumi:
-  - Creates a Namespace
-  - Creates a Deployment
-  - Creates a Service
-  - Exposes the Service using a LoadBalancer (if enabled)
+  * Creates a Namespace
+  * Creates a Deployment
+  * Creates a Service
+  * Exposes the Service using a LoadBalancer (if enabled)
 
 runtime:
   name: nodejs
@@ -26,10 +26,10 @@ template:
   displayName: Simple Webapp Kubernetes Deployment
   description: |
     A simple webapp deployment on Kubernetes using Pulumi:
-    - Creates a Namespace
-    - Creates a Deployment
-    - Creates a Service
-    - Exposes the Service using a LoadBalancer (if enabled)
+    * Creates a Namespace
+    * Creates a Deployment
+    * Creates a Service
+    * Exposes the Service using a LoadBalancer (if enabled)
   config:
     image:
       default: "nginx"
