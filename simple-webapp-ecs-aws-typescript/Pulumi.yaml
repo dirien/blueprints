@@ -22,7 +22,7 @@ config:
   ecs:tag: aws
 
 template:
-  displayName: ECS AWS TypeScript
+  displayName: Simple Webapp ECS AWS Deployment
   description: |
     A simple web application running on AWS Elastic Container Service (ECS) using Pulumi:
     

@@ -1,7 +1,7 @@
 name: ecs-aws-typescript
 author: Platform engineering team
 description: |
-  An Amazon Elastic Container Service (ECS) deployment on AWS using Pulumi:
+  An Amazon Elastic Container Service (ECS) on AWS using Pulumi:
   
   * Creates an ECS Cluster
 
@@ -22,9 +22,9 @@ config:
 
 
 template:
-  displayName: ECS AWS TypeScript
+  displayName: Elastic Container Service (ECS) on AWS
   description: |
-    An Amazon Elastic Container Service (ECS) deployment on AWS using Pulumi:
+    An Amazon Elastic Container Service (ECS) on AWS using Pulumi:
     
     * Creates an ECS Cluster
     * Creates an Load Balancer
