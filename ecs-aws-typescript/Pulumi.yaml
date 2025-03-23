@@ -27,7 +27,7 @@ template:
     An Amazon Elastic Container Service (ECS) on AWS using Pulumi:
     
     * Creates an ECS Cluster
-    * Creates an Load Balancer
+
   config:
     aws:region:
       default: eu-central-1
