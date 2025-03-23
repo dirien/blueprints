@@ -19,7 +19,7 @@ config:
       idp:blueprintType: webapp
       idp:blueprintLifecycle: development
       idp:blueprintVersion: 0.3.0
-  ecs:tag: aws
+  esc:tag: aws
 
 template:
   displayName: Simple Webapp ECS AWS Deployment

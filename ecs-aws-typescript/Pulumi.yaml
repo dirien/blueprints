@@ -18,7 +18,7 @@ config:
       idp:blueprintType: ecs
       idp:blueprintLifecycle: development
       idp:blueprintVersion: 0.2.0
-  ecs:tag: aws
+  esc:tag: aws
 
 
 template:
