@@ -4,7 +4,6 @@ description: |
   An Amazon Elastic Container Service (ECS) deployment on AWS using Pulumi:
   
   * Creates an ECS Cluster
-  * Creates an Load Balancer
 
 runtime:
   name: nodejs
@@ -32,9 +31,3 @@ template:
   config:
     aws:region:
       default: eu-central-1
-    containerPort:
-      default: "80"
-    cpu:
-      default: "512"
-    memory:
-      default: "128"

@@ -1,0 +1,41 @@
+name: simple-webapp-ecs-aws-typescript
+author: Platform engineering team
+description: |
+  A simple web application running on AWS Elastic Container Service (ECS) using Pulumi:
+  
+  * Creates an Load Balancer
+  * Creates an ECS Service
+  * Creates an ECS Task Definition
+
+runtime:
+  name: nodejs
+  options:
+    packagemanager: npm
+config:
+  pulumi:tags:
+    value:
+      pulumi:template: container-aws-typescript
+      idp:blueprintIcon: container
+      idp:blueprintType: webapp
+      idp:blueprintLifecycle: development
+      idp:blueprintVersion: 0.3.0
+  ecs:tag: aws
+
+template:
+  displayName: ECS AWS TypeScript
+  description: |
+    A simple web application running on AWS Elastic Container Service (ECS) using Pulumi:
+    
+    * Creates an Load Balancer
+    * Creates an ECS Service
+    * Creates an ECS Task Definition
+
+  config:
+    aws:region:
+      default: eu-central-1
+    containerPort:
+      default: "80"
+    cpu:
+      default: "512"
+    memory:
+      default: "128"
