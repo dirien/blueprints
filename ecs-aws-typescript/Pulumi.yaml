@@ -13,7 +13,7 @@ runtime:
 config:
   pulumi:tags:
     value:
-      pulumi:template: container-aws-typescript
+      pulumi:template: ecs-aws-typescript
       idp:blueprintIcon: container
       idp:blueprintType: ecs
       idp:blueprintLifecycle: development

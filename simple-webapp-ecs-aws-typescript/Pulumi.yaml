@@ -14,8 +14,8 @@ runtime:
 config:
   pulumi:tags:
     value:
-      pulumi:template: container-aws-typescript
-      idp:blueprintIcon: container
+      pulumi:template: simple-webapp-ecs-aws-typescript
+      idp:blueprintIcon: panel-top
       idp:blueprintType: webapp
       idp:blueprintLifecycle: development
       idp:blueprintVersion: 0.3.0
