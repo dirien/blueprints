@@ -1,0 +1,49 @@
+name: kubernetes-aws-typescript
+author: Platform engineering team
+description: |
+  A Kubernetes cluster on AWS using Pulumi:
+  
+  * Creates a VPC
+  * Creates a Kubernetes Cluster
+
+runtime:
+  name: nodejs
+  options:
+    packagemanager: npm
+
+config:
+  pulumi:tags:
+    value:
+      pulumi:template: kubernetes-aws-typescript
+      idp:blueprintIcon: ship-wheel
+      idp:blueprintType: kubernetes
+      idp:blueprintLifecycle: production
+      idp:blueprintVersion: 1.0.0
+  esc:tag: aws
+
+template:
+  displayName: Elastic Kubernetes Service (EKS) on AWS
+  description: |
+    An Amazon Elastic Kubernetes Service (EKS) on AWS using Pulumi:
+    
+    * Creates a VPC
+    * Creates a Kubernetes Cluster
+  config:
+    aws:region:
+      description: The AWS region to deploy into
+      default: us-west-2
+    minClusterSize:
+      description: Minimum size (number of nodes) of cluster
+      default: 3
+    maxClusterSize:
+      description: Maximum size (number of nodes) of cluster
+      default: 6
+    desiredClusterSize:
+      description: Desired number of nodes in the cluster
+      default: 3
+    eksNodeInstanceType:
+      description: Instance type to use for worker nodes
+      default: t3.medium
+    vpcNetworkCidr:
+      description: Network CIDR to use for new VPC
+      default: 10.0.0.0/16

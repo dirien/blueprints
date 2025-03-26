@@ -18,7 +18,7 @@ config:
   esc:tag: digitalocean
 
 template:
-  displayName: Kubernetes Cluster on DigitalOcean
+  displayName: DigitalOcean Kubernetes Cluster (DOKS) on DigitalOcean
   description: |
     A Kubernetes cluster on DigitalOcean with ArgoCD for GitOps deployments installed
   config:
