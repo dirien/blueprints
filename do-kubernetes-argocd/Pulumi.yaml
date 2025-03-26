@@ -11,7 +11,7 @@ config:
   pulumi:tags:
     value:
       pulumi:template: do-kubernetes-argocd
-      idp:blueprintIcon: boxes
+      idp:blueprintIcon: ship-wheel
       idp:blueprintType: kubernetes
       idp:blueprintLifecycle: production
       idp:blueprintVersion: 1.0.0
