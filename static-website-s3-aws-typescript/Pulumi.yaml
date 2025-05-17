@@ -1,0 +1,23 @@
+name: static-website-s3-aws-typescript
+description: A minimal AWS TypeScript Pulumi program
+runtime:
+  name: nodejs
+  options:
+    packagemanager: npm
+
+config:
+  pulumi:tags:
+    value:
+      pulumi:template: aws-typescript
+      idp:blueprintIcon: panels-top-left
+      idp:blueprintType: static-website
+      idp:blueprintLifecycle: production
+      idp:blueprintVersion: 1.0.0
+  esc:tag: aws
+
+template:
+  displayName: Static Website S3 AWS TypeScript
+  description: A minimal AWS TypeScript Pulumi program
+  config:
+    name:
+      default: "static-website"
