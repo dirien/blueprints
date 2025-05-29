@@ -1,14 +1,34 @@
 name: talos-kubernetes-cluster-do
-description: A minimal Pulumi YAML program
+description: A minimal Pulumi TypeScript program to deploy a Talos Kubernetes cluster on DigitalOcean
 
 packages:
   cluster: github.com/dirien/pulumi-talos-go-component
 
 resources:
   cluster:
-    clusterName: "example-cluster"
-    countControlPlane: 3
-    countWorker: 1
-    region: "lon1"
-    size: "s-2vcpu-4gb"
-    version: "v1.9.5"
+    clusterName: ${config.clusterName}
+    countControlPlane: ${config.countControlPlane}
+    countWorker: ${config.countWorker}
+    region: ${config.region}
+    size: ${config.size}
+    version: ${config.version}
+
+template:
+  displayName: Talos Kubernetes Cluster DO
+  description: |
+    A minimal Pulumi TypeScript program to deploy a Talos Kubernetes cluster on DigitalOcean.
+    
+    * Creates a Talos Kubernetes cluster with the specified configuration.
+  config:
+    clusterName:
+      default: "example-cluster"
+    countControlPlane:
+      default: 3
+    countWorker:
+      default: 1
+    region:
+      default: "lon1"
+    size:
+      default: "s-2vcpu-4gb"
+    version:
+      default: "v1.9.5"
