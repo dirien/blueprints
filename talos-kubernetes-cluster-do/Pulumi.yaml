@@ -1,5 +1,6 @@
 name: talos-kubernetes-cluster-do
 description: A minimal Pulumi TypeScript program to deploy a Talos Kubernetes cluster on DigitalOcean
+runtime: yaml
 
 packages:
   cluster: github.com/dirien/pulumi-talos-go-component
